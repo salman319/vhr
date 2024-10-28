@@ -31,7 +31,7 @@ export default function Landing() {
               <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>Login</h1>
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Email
                 </label>
@@ -51,7 +51,7 @@ export default function Landing() {
 
               <div className="group fields mb-2">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Password
                 </label>
@@ -82,12 +82,12 @@ export default function Landing() {
                   </span>
                 </div>
               </div>
-              <Link href={'/forgotpassword'} className='text-black hover:text-green block font-medium text-right w-full'>Forgot Password?</Link>
+              <Link href={'/forgot-password'} className='text-black hover:text-green block font-medium text-right w-full'>Forgot Password?</Link>
 
               <button className='bg-green-gradient mt-5 hover:bg-hover-gradient text-base font-bold rounded-full p-2 w-full uppercase text-white'>
                 Login
               </button>
-              <div className='text-base text-center relative lines my-5'>Or continue</div>
+              <div className='text-base text-center relative lines text-black my-5'>Or continue</div>
 
               <div className='flex gap-5 items-center justify-center'>
                 <button className='border-2 rounded-lg border-light w-[60px] h-[60px] flex justify-center items-center hover:border-primary'>

@@ -29,16 +29,16 @@ export default function Login() {
           <div className='h-screen bg-white overflow-auto grid-item p-5 md:p-8'>
             <div className='bg-white shadow-custom rounded-[60px] p-4 md:p-6'>
               <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>OTP Verification</h1>
-              <p className='text-center mb-5'>
+              <p className='text-center text-black mb-5'>
                 Enter the verification code we just sent on your email address for setting your password.
               </p>
-              <div className="group fields mb-5">
+              <div className="group flex justify-center gap-3 fields mb-5">
 
                 <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
 
@@ -46,7 +46,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
 
@@ -54,7 +54,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
 
@@ -62,7 +62,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
 
@@ -70,14 +70,14 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
                 <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
                   />
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function Login() {
                 Verify
               </button>
 
-              <div className='text-center text-base py-5'>
+              <div className='text-center text-black text-base py-5'>
                 Didn’t receive code?
                 <Link href={'/signup'} className='text-primary underline hover:text-green pl-1'>
                   Resend

@@ -29,12 +29,12 @@ export default function Login() {
           <div className='h-screen bg-white overflow-auto grid-item p-5 md:p-8'>
             <div className='bg-white shadow-custom rounded-[60px] p-4 md:p-6'>
               <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>Create Password</h1>
-              <p className='text-center mb-5'>
+              <p className='text-center text-black mb-5'>
                 Your new password must be unique from the previous one.
               </p>
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   New Password
                 </label>
@@ -68,7 +68,7 @@ export default function Login() {
 
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Confirm Password
                 </label>

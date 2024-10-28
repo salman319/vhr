@@ -31,7 +31,7 @@ export default function Signup() {
               <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>Sign Up</h1>
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Name
                 </label>
@@ -51,7 +51,7 @@ export default function Signup() {
 
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Email
                 </label>
@@ -71,7 +71,7 @@ export default function Signup() {
 
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Password
                 </label>
@@ -105,7 +105,7 @@ export default function Signup() {
 
               <div className="group fields mb-5">
                 <label
-                  className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
+                  className="inline-block text-black w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
                 >
                   Confirm Password
                 </label>
@@ -140,7 +140,7 @@ export default function Signup() {
               <button className='bg-green-gradient mt-2 hover:bg-hover-gradient text-base font-bold rounded-full p-2 w-full uppercase text-white'>
                 Sign Up
               </button>
-              <div className='text-base text-center relative lines my-5'>Or continue</div>
+              <div className='text-base text-center relative lines text-black my-5'>Or continue</div>
 
               <div className='flex gap-5 items-center justify-center'>
                 <button className='border-2 rounded-lg border-light w-[60px] h-[60px] flex justify-center items-center hover:border-primary'>
