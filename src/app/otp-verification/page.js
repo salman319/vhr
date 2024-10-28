@@ -26,9 +26,9 @@ export default function Login() {
             </div>
           </div>
 
-          <div className='h-screen overflow-auto grid-item p-5 md:p-8'>
+          <div className='h-screen bg-white overflow-auto grid-item p-5 md:p-8'>
             <div className='bg-white shadow-custom rounded-[60px] p-4 md:p-6'>
-              <h1 className='text-2xl md:text-4xl font-bold text-center pb-8'>OTP Verification</h1>
+              <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>OTP Verification</h1>
               <p className='text-center mb-5'>
                 Enter the verification code we just sent on your email address for setting your password.
               </p>

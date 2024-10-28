@@ -26,9 +26,9 @@ export default function Signup() {
             </div>
           </div>
 
-          <div className='h-screen overflow-auto grid-item p-5 md:p-8'>
+          <div className='h-screen bg-white overflow-auto grid-item p-5 md:p-8'>
             <div className='bg-white shadow-custom rounded-[60px] p-4 md:p-6'>
-              <h1 className='text-2xl md:text-4xl font-bold text-center pb-8'>Sign Up</h1>
+              <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>Sign Up</h1>
               <div className="group fields mb-5">
                 <label
                   className="inline-block w-full text-base font-medium text-balck transition-all duration-200 ease-in-out group-focus-within:text-primary"
@@ -156,7 +156,7 @@ export default function Signup() {
                 </button>
               </div>
 
-              <div className='text-center text-base py-5'>
+              <div className='text-center text-base text-black py-5'>
                 Already have an account?
                 <Link href={'/'} className='text-primary underline hover:text-green pl-1'>Login</Link>
               </div>
