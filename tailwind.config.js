@@ -34,7 +34,7 @@ module.exports = {
         'modal': '0 0px 18px #45b68a;',
         'tap': 'inset 0 0 3px 13px #33bd8f;',
         'coins': 'inset 0 0 3px 8px #33bd8f;',
-        'dump': '0 0px 6px #f7e696;',
+        'pump': '0 0px 6px #00e7c7;',
       }
     },
   },
