@@ -34,7 +34,7 @@ export default function Header() {
                 </g>{" "}
               </svg>
             </Link>
-            {/* Add Open class to toggle humburger menu */}
+            {/* Add Open class to toggle humburger/cross button */}
             <div className="btn-burger">
               <span />
               <span />
