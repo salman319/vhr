@@ -19,7 +19,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #feefef;
+	border-radius: 50px;
+}
 
+::-webkit-scrollbar
+{
+	width: 3px;
+  border-radius: 50px;
+	background-color: #feefef;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 50px;
+	background-color: #214a45
+}
 /* .blog-content {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -375,12 +393,25 @@ object {
 
 .welcome-sec {
   background-image: url('/images/bg.svg');
-  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
-
+.admin-sidebar {
+  background-image: url('/images/bg.svg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.welcome-note {
+  background-image: url('/images/hero.svg');
+  background-position: top left;
+  background-size: cover;
+}
+.content {
+  padding-left: 260px;
+}
 .gradient {
   background: linear-gradient(45deg, #0D6963 40%, #0D6963 50%, #0AC2AE 75%, #0AC2AE);
   -webkit-background-clip: text;
@@ -565,7 +596,9 @@ object {
   .header {
     padding: 20px 0;
   }
-
+  .content {
+    padding-left: 0px;
+  }
   .navigation {
     padding: 30px 0;
   }
