@@ -7,6 +7,7 @@ module.exports = {
         background: "var(--background)",
         primary: "#0D6963",
         green: "#224641",
+        online: "#00A12B",
         gray: "#6E6E6E",
         light: "#D2D2D2",
         foreground: "var(--foreground)",
