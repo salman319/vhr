@@ -132,9 +132,9 @@ export default function Dashboard() {
 
             </div>
 
-            <div className='grid grid-cols-[66.66%_33.33%] gap-5'>
-              <div className='p-5 rounded-[26px] bg-white shadow-cards'>
-                <div className='flex justify-between items-center'>
+            <div className='grid grid-cols-1 lg:grid-cols-[65.66%_32.33%] gap-5 mb-5'>
+              <div className='grid-item rounded-[26px] bg-white shadow-cards'>
+                <div className='flex justify-between items-center mb-5 p-5 pb-0'>
                   <h1 className='text-xl md:text-[22px] font-semibold'>Companies Details</h1>
                   <div className="">
                     {/* <div className="flex items-center space-x-2 border border-dark rounded-full pl-2 pr-1 py-1"> */}
@@ -152,23 +152,23 @@ export default function Dashboard() {
 
                 </div>
 
-                <div classname="overflow-x-auto">
-                  <table classname="min-w-full w-full border border-gray-200 text-left text-sm">
+                <div className="overflow-x-auto">
+                  <table className="min-w-full w-full text-left text-sm">
                     <thead classname="bg-gray-100">
                       <tr>
-                        <th classname="px-4 py-3 border-b font-medium text-gray-700">Sr. No</th>
-                        <th classname="px-4 py-3 border-b font-medium text-gray-700">Name</th>
-                        <th classname="px-4 py-3 border-b font-medium text-gray-700">
+                        <th>Sr. No</th>
+                        <th>Name</th>
+                        <th>
                           Package
                         </th>
-                        <th classname="px-4 py-3 border-b font-medium text-gray-700">Date</th>
-                        <th classname="px-4 py-3 border-b font-medium text-gray-700">Action</th>
+                        <th>Date</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="odd:bg-white even:bg-gray-50">
-                        <td className="px-4 py-3 border-b text-gray-600">1</td>
-                        <td className="px-4 py-3 border-b text-gray-600 flex items-center gap-3">
+                        <td className="text-xs">1</td>
+                        <td>
                           <div className='flex items-center gap-2'>
                             <Image width={100} height={100} src='/images/nexus.svg' className='w-10' alt='Media' />
                             <div>
@@ -177,29 +177,327 @@ export default function Dashboard() {
                             </div>
                           </div>
                         </td>
-                        <td className="px-4 py-3 border-b text-gray-600">
+                        <td>
                           <div className='flex items-center gap-2'>
-                            <Image width={100} height={100} src='/images/trial.svg' className='w-10' alt='Media' />
+                            <Image width={100} height={100} src='/images/trial.svg' className='w-6' alt='Media' />
                             <div>
                               <p className="font-medium text-xs">Trial</p>
                               <p className="text-[10px] text-dark">Monthly</p>
                             </div>
                           </div>
                         </td>
-                        <td className="px-4 py-3 border-b text-gray-600">
+                        <td>
                           <p className="font-medium text-xs">18-11-2024 <span className='text-dark'>(2 days ago)</span></p>
                         </td>
-                        <td className="px-4 py-3 border-b text-gray-600">
+                        <td>
                           <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
                             View
                           </button>
                         </td>
                       </tr>
 
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">2</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/neon.svg' className='w-10' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Neon in</p>
+                              <p className="text-[10px] text-dark">www.neon.in</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/premium.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Premium</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">19-11-2024 <span className='text-dark'>(3 days ago)</span>
+                          </p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">3</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/nexus.svg' className='w-10' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Nexus Co.</p>
+                              <p className="text-[10px] text-dark">www.nexus.co</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/trial.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Trial</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">20-11-2024 <span className='text-dark'>(4 days ago)</span></p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">4</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/neon.svg' className='w-10' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Neon in</p>
+                              <p className="text-[10px] text-dark">www.neon.in</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/premium.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Premium</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">21-11-2024 <span className='text-dark'>(5 days ago)</span>
+                          </p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
 
+              </div>
+
+              <div className='grid-item rounded-[26px] bg-white shadow-cards p-5'>
+                <div className='felx justify-between items-center mb-5'>
+                  <h1 className='text-[22px] font-semibold'>Details on Map</h1>
+                  {/* <Link href={''} className='text-primary block hover:text-green text-sm'>Show All List</Link> */}
+                </div>
+
+                <div>
+                  <Image height={100} width={100} src='/images/map.png' className='w-full' alt='Media' />
+                </div>
+              </div>
+
+              <div className='grid-item rounded-[26px] bg-white shadow-cards'>
+                <div className='flex justify-between items-center mb-5 p-5 pb-0'>
+                  <h1 className='text-xl md:text-[22px] font-semibold'>Package Details</h1>
+                  <div className="">
+                    {/* <div className="flex items-center space-x-2 border border-dark rounded-full pl-2 pr-1 py-1"> */}
+                    {/* <span className="text-base">Company Details</span> */}
+                    <div className="relative">
+                      <select
+                        className="bg-primary text-white border-0 rounded-full px-2 py-1 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-green transition ease-in-out duration-150"
+                        id="product"
+                      >
+                        <option value="product-1">All Types</option>
+                        <option value="product-2">All Types</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div className="overflow-x-auto">
+                  <table className="min-w-full w-full text-left text-sm">
+                    <thead classname="bg-gray-100">
+                      <tr>
+                        <th>Sr. No</th>
+                        <th>Name</th>
+                        <th>
+                          Package Price
+                        </th>
+                        <th>Total Companies</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">1</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/trial.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Trial</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">$0</p>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">31</p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">2</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/basic.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Basic</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">$29</p>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">27</p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">3</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/plus.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Plus</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">$39</p>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">22</p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">4</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/premium.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Premium</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">$49</p>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">09</p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr className="odd:bg-white even:bg-gray-50">
+                        <td className="text-xs">5</td>
+                        <td>
+                          <div className='flex items-center gap-2'>
+                            <Image width={100} height={100} src='/images/advance.svg' className='w-6' alt='Media' />
+                            <div>
+                              <p className="font-medium text-xs">Advanced</p>
+                              <p className="text-[10px] text-dark">Monthly</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">$59</p>
+                        </td>
+                        <td>
+                          <p className="font-medium text-xs">07</p>
+                        </td>
+                        <td>
+                          <button className="bg-primary hover:bg-hover-gradient text-white px-4 py-1 rounded">
+                            View
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div className='grid-item rounded-[26px] bg-white shadow-cards p-5'>
+                <div className='felx justify-between items-center mb-5'>
+                  <h1 className='text-[22px] font-semibold'>Details on Chart</h1>
+                  {/* <Link href={''} className='text-primary block hover:text-green text-sm'>Show All List</Link> */}
+                </div>
+
+                <div>
+                  <Image height={100} width={100} src='/images/chart.svg' className='w-full' alt='Media' />
+                </div>
+
+                <div className='flex justify-between items-center gap-3 flex-wrap mt-4'>
+                  <div className='flex gap-1 items-center'>
+                    <div className='w-2 h-2 rounded-full bg-[#308EFB]'></div>
+                    <p className='text-xs'>Trial</p>
+                  </div>
+
+                  <div className='flex gap-1 items-center'>
+                    <div className='w-2 h-2 rounded-full bg-blueD'></div>
+                    <p className='text-xs'>Basic</p>
+                  </div>
+
+                  <div className='flex gap-1 items-center'>
+                    <div className='w-2 h-2 rounded-full bg-parrotD'></div>
+                    <p className='text-xs'>Plus</p>
+                  </div>
+
+                  <div className='flex gap-1 items-center'>
+                    <div className='w-2 h-2 rounded-full bg-primary'></div>
+                    <p className='text-xs'>Premium</p>
+                  </div>
+
+                  <div className='flex gap-1 items-center'>
+                    <div className='w-2 h-2 rounded-full bg-yellowD'></div>
+                    <p className='text-xs'>Advanced</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
