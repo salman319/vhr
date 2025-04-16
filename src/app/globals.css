@@ -373,30 +373,36 @@ object {
 
 .lines::before {
   content: ' ';
-  width: 40%;
+  width: 35%; /* Adjusts with viewport width */
+  max-width: 100%; /* Prevent overflow */
   height: 2px;
-  background: linear-gradient(90deg, #01705F 0%, #02D6B6);
+  background: linear-gradient(90deg, #1DAB61, transparent);
   position: absolute;
   left: 0;
   top: 12px;
 }
 
+
 .lines::after {
   content: ' ';
-  width: 40%;
+  width: 35%;
   height: 2px;
-  background: linear-gradient(90deg, #01705F 0%, #02D6B6);
+  max-width: 100%;
+  background: linear-gradient(270deg, #1DAB61, transparent);
   position: absolute;
   right: 0;
   top: 12px;
 }
 
 .welcome-sec {
-  background-image: url('/images/bg.svg');
+  background-image: url('/images/auth.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
 }
+
 .admin-sidebar {
   background-image: url('/images/bg.svg');
   min-height: 100vh;
