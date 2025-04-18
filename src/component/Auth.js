@@ -57,6 +57,16 @@ const Auth = () => {
                         </p>
                     </div>
                 ))}
+                {/* <div className='hidden md:flex gap-3 justify-center mt-8'>
+                    {slides.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setCurrentSlide(index)}
+                            className={`w-3 h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white w-6' : 'bg-white/50'}`}
+                            aria-label={`Go to slide ${index + 1}`}
+                        />
+                    ))}
+                </div> */}
             </div>
         </div>
     )
