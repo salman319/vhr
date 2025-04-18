@@ -1,44 +1,34 @@
 "use client";
-import React, { useRef, useEffect } from 'react'
+import React from 'react';
 import Link from 'next/link';
+import Auth from '@/component/Auth';
 import Image from 'next/image';
+import Vector from "../../../public/images/vector.png";
+
 export default function Login() {
   return (
     <React.Fragment>
       <main>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
-          <div className='welcome-sec grid-item flex justify-center items-center flex-col gap-5'>
-            <div className='flex justify-center'>
-              <Image width={100} height={100} src='/images/logo.png' alt='Media' className='w-40' />
-            </div>
-            <div>
-              <h1 className='text-3xl font-bold text-white md:text-6xl text-center'>
-                Welcome to VHR
-              </h1>
-            </div>
-            <div className='text-center text-[18px] px-8 text-white'>
-              Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.
-            </div>
-            <div className='flex justify-center'>
-              <button className='rounded-full py-2 px-2 md:px-5 bg-green hover:bg-primary text-white text-base'>
-                www.virtuallegaloffice.ai
-              </button>
-            </div>
-          </div>
-
-          <div className='h-screen bg-white overflow-auto grid-item p-5 md:p-8'>
-            <div className='bg-white shadow-custom rounded-[60px] p-4 md:p-6'>
-              <h1 className='text-2xl text-black md:text-4xl font-bold text-center pb-8'>OTP Verification</h1>
-              <p className='text-center text-black mb-5'>
-                Enter the verification code we just sent on your email address for setting your password.
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center bg-white">
+          <Auth />
+          <div className='h-screen flex flex-col justify-center bg-white overflow-auto grid-item p-5 md:p-8'>
+            <div className=''>
+              <a href="/forgot-password" className="back flex items-center gap-1.5 pb-7">
+                <Image src={Vector} alt="" />
+                <p className="text-base font-normal text-black hover:text-[#1DAB61] transition duration-300">Back</p>
+              </a>
+              <h1 className='text-2xl text-black md:text-4xl font-bold text-left pb-1.5'>Enter OTP</h1>
+              <p className='text-left text-[#A2A1A8] mb-5'>
+                We have share a code of your registered email address
+                robertallen@example.com
               </p>
-              <div className="group flex justify-center gap-3 fields mb-5">
+              <div className="group flex justify-between gap-3 fields mb-5 mt-7">
 
                 <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px]  text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
 
@@ -46,7 +36,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px] text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
 
@@ -54,7 +44,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px]  text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
 
@@ -62,7 +52,7 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px]  text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
 
@@ -70,33 +60,36 @@ export default function Login() {
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px]  text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
                 <div className="relative flex items-center">
                   <input
                     type="text"
                     placeholder='-'
-                    className="relative text-black h-10 w-10 text-center rounded-lg border bg-white border-gray p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-primary focus:drop-shadow-lg"
+                    className="relative text-black lg:h-[60px] md:h-[40px]  lg:w-[60px] md:w-[40px] h-[35px] w-[35px]  text-center rounded-lg border bg-white border-[#A2A1A833] p-1 font-thin outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:ring-2 focus:ring-[#1DAB61] "
                   />
                 </div>
               </div>
 
-              <button className='bg-green-gradient mt-2 hover:bg-hover-gradient text-base font-bold rounded-full p-2 w-full uppercase text-white'>
+              <a
+                href="/create-password"
+                className="w-full bg-[#1DAB61] mt-7 mb-5 hover:bg-[#37c77d] transition duration-300 h-14 text-base font-bold rounded-[10px] p-2 uppercase text-white flex items-center justify-center"
+              >
                 Verify
-              </button>
+              </a>
 
-              <div className='text-center text-black text-base py-5'>
+              {/* <div className='text-center text-black text-base py-5'>
                 Didn’t receive code?
-                <Link href={'/signup'} className='text-primary underline hover:text-green pl-1'>
+                <Link href={'/signup'} className='text-[#1DAB61] underline hover:text-[#37c77d] pl-1'>
                   Resend
                 </Link>
-              </div>
+              </div> */}
 
             </div>
           </div>
         </div>
       </main>
     </React.Fragment>
-  )
+  );
 }

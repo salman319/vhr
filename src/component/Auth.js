@@ -1,18 +1,63 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Auth = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const slides = [
+        {
+            heading: "Welcome to VHR",
+            content: "90% faster onboarding with our automated system"
+        },
+        {
+            heading: "Welcome to VR",
+            content: "Track employee performance with precision"
+        },
+        {
+            heading: "Welcome to VH",
+            content: "Reduce attrition with our engagement tools"
+        }
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % slides.length);
+        }, 3000);
+        return () => clearInterval(interval);
+    }, []);
+
     return (
-        <div className='welcome-sec grid-item lg:flex md:flex hidden rounded-[10px] justify-start items-center pt-[95px] h-[92vh] w-[95%] mx-auto flex-col gap-5'>
-            {/* <div className='flex justify-center'>
-              <Image width={100} height={100} src='/images/logo.png' alt='Media' className='w-40' />
+        <div className='welcome-sec bg-gradient-to-r from-blue-600 to-purple-600 lg:flex md:flex hidden rounded-[10px] justify-start pt-[95px] items-center h-[92vh] w-[95%] mx-auto flex-col'>
+            {/* Logo section - uncomment when ready */}
+            {/* <div className='flex justify-center mb-8'>
+              <Image width={120} height={120} src='/images/logo.png' alt='Logo' className='w-32 md:w-40' />
             </div> */}
-            <div>
-                <h1 className='lg:text-6xl md:3xl text-3xl font-bold text-white md:text-6xl text-center'>
-                    Welcome to VHR
-                </h1>
+
+            {/* Main content container */}
+            <div className='relative w-[98%] px-6 text-center'>
+                {/* Sliding Heading */}
+                {slides.map((slide, index) => (
+                    <div
+                        key={`heading-${index}`}
+                        className={`absolute inset-0 flex items-center justify-center transition-opacity duration-500 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
+                    >
+                        <h1 className='text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold text-white'>
+                            {slide.heading}
+                        </h1>
+                    </div>
+                ))}
+
+                {/* Sliding Content */}
+                {slides.map((slide, index) => (
+                    <div
+                        key={`content-${index}`}
+                        className={`absolute inset-0 flex pt-[70px] items-center justify-center transition-opacity duration-500 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}
+                    >
+                        <p className='text-lg sm:text-xl md:text-xl px-4 sm:px-8 text-white'>
+                            {slide.content}
+                        </p>
+                    </div>
+                ))}
             </div>
-            <div className='text-center lg:text-[24px] md:text-[18px] text-[16px] px-8 text-white'>
-                Develop a web-based HR platform that automates employee onboarding, lead management, HR operations, finance, and compliance. </div>
         </div>
     )
 }
