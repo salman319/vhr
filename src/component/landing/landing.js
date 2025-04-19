@@ -11,7 +11,7 @@ export default function Landing() {
       <main>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center  bg-white'>
           <Auth />
-          <div className='h-screen flex flex-col justify-center bg-white overflow-auto p-5 md:p-8'>
+          <div className='h-screen flex flex-col justify-center bg-white overflow-auto px-5 py-8 md:p-8'>
             <div className=''>
               {/* Image before heading */}
               <div className="flex justify-center mb-8">
@@ -83,9 +83,12 @@ export default function Landing() {
               </div>
 
               {/* Login Button */}
-              <button className='bg-[#1DAB61] mt-5 hover:bg-[#37c77d] h-14 text-base font-bold rounded-[10px] transition duration-300 p-2 w-full uppercase text-white'>
+              <a
+                href="/dashboard"
+                className="w-full bg-[#1DAB61] mt-7 mb-5 hover:bg-[#37c77d] transition duration-300 h-14 text-base font-bold rounded-[10px] p-2 uppercase text-white flex items-center justify-center"
+              >
                 Login
-              </button>
+              </a>
 
               {/* Sign Up Link */}
               <div className='text-center text-black text-base py-5'>

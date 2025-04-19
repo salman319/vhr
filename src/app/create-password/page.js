@@ -24,7 +24,7 @@ export default function Login() {
       <main>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center bg-white">
           <Auth />
-          <div className='h-screen flex flex-col justify-center bg-white overflow-auto grid-item p-5 md:p-8'>
+          <div className='h-screen flex flex-col justify-center bg-white overflow-auto grid-item px-5 py-8 md:px-8 md:pb-8 md:pt-14'>
             <div className=''>
               <a href="/otp-verification" className="back flex items-center gap-1.5 pb-7">
                 <Image src={Vector} alt="" />

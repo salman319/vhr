@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import Logo from "../../../public/images/logo.png"
 export default function AdminHeader() {
   return (
     <React.Fragment>
@@ -8,7 +9,7 @@ export default function AdminHeader() {
         <div className='flex justify-between items-center px-4 md:px-10 py-3 shadow-lg bg-white'>
           <div>
             <Link href={''}>
-              <Image width={100} height={100} src='/images/logo.png' className='w-full' alt='Media' />
+              <Image width={100} height={100} src={Logo} className='w-full' alt='Media' />
             </Link>
           </div>
 

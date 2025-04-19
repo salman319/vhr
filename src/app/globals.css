@@ -395,7 +395,7 @@ object {
 }
 
 .welcome-sec {
-  background-image: url('/images/auth.png');
+  background-image: url('/images/auth_2.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
